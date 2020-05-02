@@ -1,0 +1,19 @@
+name: "ci"
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test:ci
