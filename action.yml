@@ -1,0 +1,18 @@
+name: 'Create a deploy for a Sentry.io release'
+description: 'Sentry.io release deploys for GitHub Actions'
+inputs:
+  version:
+    description: 'Version being deployed'
+    required: true
+  environment:
+    description: 'Environment name'
+    required: true
+  versionPrefix:
+    description: 'String to prefix version with. Used to create dynamic Sentry release versions.'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'bookmark'
+  color: 'purple'
