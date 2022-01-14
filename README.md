@@ -161,4 +161,4 @@ Please see [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-Copyright (c) 2020 Thomas Lindner. Licensed under the MIT license.
+Copyright (c) 2020-2022 Thomas Lindner. Licensed under the MIT license.
