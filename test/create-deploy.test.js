@@ -11,11 +11,9 @@ describe('create-deploy', () => {
   test('No releaseNamePrefix', async () => {
     const getPath = jest.fn().mockReturnValue('sentryCliPath');
 
-    SentryCli.mockImplementation(() => {
-      return {
-        releases: {},
-      };
-    });
+    SentryCli.mockImplementation(() => ({
+      releases: {},
+    }));
     SentryCli.getPath = getPath;
     core.getInput.mockReturnValueOnce('refs/tags/v1.0.0').mockReturnValueOnce('qa');
     runCommand.runCommand.mockResolvedValue('done');
@@ -38,11 +36,9 @@ describe('create-deploy', () => {
   test('releaseNamePrefix set', async () => {
     const getPath = jest.fn().mockReturnValue('sentryCliPath');
 
-    SentryCli.mockImplementation(() => {
-      return {
-        releases: {},
-      };
-    });
+    SentryCli.mockImplementation(() => ({
+      releases: {},
+    }));
     SentryCli.getPath = getPath;
     core.getInput
       .mockReturnValueOnce('refs/tags/v1.0.0')
