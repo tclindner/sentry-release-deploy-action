@@ -2,8 +2,6 @@
 
 [![license](https://img.shields.io/github/license/tclindner/sentry-release-deploy-action.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/sentry-release-deploy-action/blob/master/LICENSE)
 <a href="https://github.com/tclindner/sentry-release-deploy-action"><img alt="GitHub Actions status" src="https://github.com/tclindner/sentry-release-deploy-action/workflows/ci/badge.svg"></a>
-[![Dependency Status](https://david-dm.org/tclindner/sentry-release-deploy-action.svg?style=flat-square)](https://david-dm.org/tclindner/sentry-release-deploy-action)
-[![devDependency Status](https://david-dm.org/tclindner/sentry-release-deploy-action/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/sentry-release-deploy-action#info=devDependencies)
 
 > A GitHub action that creates a [deploy for a Sentry.io release](https://docs.sentry.io/api/releases/post-release-deploys/).
 
@@ -161,4 +159,4 @@ Please see [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-Copyright (c) 2020-2022 Thomas Lindner. Licensed under the MIT license.
+Copyright (c) 2020-2023 Thomas Lindner. Licensed under the MIT license.
